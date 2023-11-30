@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        // 融云 maven 仓库地址
+        maven { url "https://maven.rongcloud.cn/repository/maven-releases/" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // 融云 maven 仓库地址
+        maven { url "https://maven.rongcloud.cn/repository/maven-releases/" }
+    }
+}
+rootProject.name = "android-global-im-uikit-quickdemo"
+include ':app'
